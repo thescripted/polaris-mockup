@@ -1,0 +1,31 @@
+.footer img {
+  margin-right: 40px;
+}
+
+.right-of-image {
+  border: 1px solid red;
+  text-align: center;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  max-height: 1400px;
+}
+
+.right-of-image {
+  padding: 0 0px;
+}
+
+.reasons i {
+  font-size: 30px;
+}
+
+.why-choose-object {
+  width: 200px;
+  height: 250px;
+}

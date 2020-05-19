@@ -3,14 +3,13 @@ import "./App.css";
 import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
-import Service from "./Service";
+//import Service from "./Service";
 
 const App = () => {
   return (
     <>
       <Header />
       <Body />
-      <Service />
       <Footer />
     </>
   );

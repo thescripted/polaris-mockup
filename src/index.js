@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import "./index.css";
+import "font-awesome/css/font-awesome.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
