@@ -1,0 +1,8 @@
+.body-container {
+  display: flex;
+  padding: 100px;
+}
+
+.footer {
+  display: flex;
+}
