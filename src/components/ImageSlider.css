@@ -1,5 +1,7 @@
-.slideshow {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.image-slider {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  background-position: center;
+  display: inline-block;
 }
