@@ -16,9 +16,10 @@ const Header = () => {
           <b>London</b> 614.505.7027
         </span>
         <span>
-          <button className="button">Schedule Appointment</button>
+          <button className="schedule-button">Schedule Appointment</button>
         </span>
       </div>
+      <span className="header-menu">Call</span>
       <div className="navbar">
         <ul>
           <li>
@@ -38,6 +39,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      <span className="navbar-menu">Menu</span>
     </div>
   );
 };

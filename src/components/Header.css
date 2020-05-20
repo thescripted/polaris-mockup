@@ -7,7 +7,6 @@
     #fff 50%
   ); /* A little hacky. Does not support < IE10 */
   padding: 0 100px;
-  min-height: 100px;
 }
 
 .logo {
@@ -53,4 +52,24 @@
   color: #222;
   text-decoration: none;
   text-align: center;
+}
+
+.navbar-menu,
+.header-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    background: linear-gradient(to bottom, #dfeefb 50%, #dfeefb 50%);
+  }
+
+  .navbar,
+  .header-contacts {
+    display: none;
+  }
+  .navbar-menu,
+  .header-menu {
+    display: inline;
+  }
 }

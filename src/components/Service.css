@@ -1,5 +1,5 @@
 .service-header {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   position: relative;
 }
@@ -16,4 +16,22 @@
 
 .slide-arrow {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .service-container {
+    width: 100%;
+  }
+
+  .service-header {
+    width: 100%;
+  }
+
+  .service-header button {
+    display: none;
+  }
+
+  .service-slides {
+    width: 100%;
+  }
 }
