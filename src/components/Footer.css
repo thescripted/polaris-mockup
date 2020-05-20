@@ -1,24 +1,39 @@
-.footer img {
-  margin-right: 40px;
+.footer {
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  margin: 50px auto;
+  margin-top: 100px;
+  font-size: 10px;
 }
 
+.footer-image-container {
+  flex: 0 2 40%;
+  overflow: hidden;
+}
+
+.footer-image-container img {
+  margin-left: -120px;
+  max-height: 100%;
+}
 .right-of-image {
-  border: 1px solid red;
+  flex: 0 1 60%;
   text-align: center;
-  width: 100%;
-  margin-right: 100px;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.right-of-image h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
 }
 
 .reasons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 600px;
-  max-height: 1400px;
-}
-
-.right-of-image {
-  padding: 0 0px;
+  justify-content: space-between;
 }
 
 .reasons i {
@@ -26,6 +41,11 @@
 }
 
 .why-choose-object {
-  width: 200px;
-  height: 250px;
+  max-width: 160px;
+  max-height: 240px;
+}
+
+.why-choose-object h3 {
+  color: #ff8e14;
+  text-transform: uppercase;
 }
