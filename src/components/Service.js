@@ -89,7 +89,7 @@ const Service = () => {
       <div className="service-header">
         <h2>Featured Services</h2>
         <span>
-          <button className="button">Full Services</button>
+          <button className="button desktop-button">Full Services</button>
         </span>
       </div>
       <div className="service-slides">
@@ -116,6 +116,7 @@ const Service = () => {
           clickFunction={nextSlide}
           glyph="&#62;"
         />
+        <button className="button mobile-button">Full Services</button>
       </div>
     </div>
   );

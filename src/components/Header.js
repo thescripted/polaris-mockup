@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      <h1 className="logo">logo</h1>
+      <span className="logo">logo</span>
       <div className="header-container">
         <div className="header-contacts">
           <span>
@@ -40,6 +40,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        <span className="booking">Book</span>
         <span className="navbar-menu">Menu</span>
       </div>
     </div>

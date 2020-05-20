@@ -10,7 +10,7 @@
   margin-top: 10px;
   flex: 0 2 40%;
   overflow: hidden;
-  max-height: 500px;
+  height: 500px;
   position: relative;
   left: -50px;
 }
@@ -58,11 +58,17 @@
     width: 100%;
   }
 
-  .footer-image-container {
-    display: none;
+  .right-of-image {
+    text-align: left;
   }
 
+  .footer-image-container {
+    left: 0;
+    text-align: center;
+    height: 450px;
+  }
   .reasons {
     justify-content: center;
+    text-align: center;
   }
 }

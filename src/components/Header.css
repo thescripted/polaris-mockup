@@ -9,9 +9,14 @@
   padding: 0 100px;
 }
 
+.header {
+  position: relative;
+}
 .logo {
   position: absolute;
-  margin-left: 10%;
+  font-size: 24px;
+  top: 30%;
+  left: 5%;
 }
 
 .header-contacts {
@@ -59,7 +64,8 @@
   color: #aaa;
 }
 .navbar-menu,
-.header-menu {
+.header-menu,
+.booking {
   display: none;
 }
 
@@ -73,7 +79,8 @@
     display: none;
   }
   .navbar-menu,
-  .header-menu {
+  .header-menu,
+  .booking {
     display: inline;
   }
 }
