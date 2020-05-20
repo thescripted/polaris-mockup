@@ -1,8 +1,8 @@
 .slide {
   position: relative;
   width: 200px;
-  height: 300px;
-  margin-right: 15px;
+  height: 250px;
+  margin-right: 20px;
   overflow: hidden;
   background-position: center;
   display: inline-block;
@@ -10,7 +10,7 @@
 }
 
 .slide img {
-  max-height: 100%;
+  height: 100%;
 }
 
 .slide p {

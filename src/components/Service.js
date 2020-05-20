@@ -59,21 +59,21 @@ const Service = () => {
   ];
 
   const sliderSize = Math.min(width, 900);
-  const viewableImages = Math.floor(sliderSize / 215);
+  const viewableImages = Math.floor(sliderSize / 220);
   const indexable = slidesData.length - viewableImages;
   console.log(indexable);
   const nextSlide = () => {
     /* All the values here are hard-coded for the sake of demonstration */
     /* The translate value should be equal to the width of the images + padding */
-    setTranslate(translate - 215);
+    setTranslate(translate - 220);
   };
   const prevSlide = () => {
-    setTranslate(translate + 215);
+    setTranslate(translate + 220);
   };
 
   /* Upon re-render, effect will determine if slide should be disabled or not */
   useEffect(() => {
-    if (translate <= -215 * indexable) {
+    if (translate <= -220 * indexable) {
       setDisableRight(true);
     } else {
       setDisableRight(false);

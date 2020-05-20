@@ -72,15 +72,25 @@
 @media screen and (max-width: 768px) {
   .header-container {
     background: linear-gradient(to bottom, #dfeefb 50%, #dfeefb 50%);
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
   }
 
   .navbar,
   .header-contacts {
     display: none;
   }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+  }
   .navbar-menu,
   .header-menu,
   .booking {
-    display: inline;
+    display: inline-block;
+    padding-left: 25px;
+    font-weight: bold;
   }
 }
