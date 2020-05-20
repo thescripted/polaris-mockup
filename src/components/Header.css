@@ -10,8 +10,8 @@
 }
 
 .logo {
-  border: 1px solid blue;
   position: absolute;
+  margin-left: 10%;
 }
 
 .header-contacts {
@@ -41,19 +41,23 @@
   margin: 0;
   font-weight: bold;
   font-size: 10px;
+  height: 100%;
 }
 
 .navbar li {
-  display: inline;
+  display: inline-block;
   padding-left: 35px;
 }
 
-.navbar li a {
+.navbar li > a {
   color: #222;
   text-decoration: none;
   text-align: center;
 }
 
+.navbar li > a:hover {
+  color: #aaa;
+}
 .navbar-menu,
 .header-menu {
   display: none;

@@ -1,29 +1,32 @@
 .footer {
   display: flex;
-  width: 1000px;
+  width: 900px;
   margin: 50px auto;
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 10px;
 }
 
 .footer-image-container {
+  margin-top: 10px;
   flex: 0 2 40%;
   overflow: hidden;
-  max-height: 300px;
+  max-height: 500px;
+  position: relative;
+  left: -50px;
 }
 
 .footer-image-container img {
-  margin-left: -120px;
-  max-height: 100%;
+  margin-left: -150px;
+  height: 100%;
 }
 .right-of-image {
   flex: 0 1 60%;
   text-align: center;
   padding: 20px;
-  margin-left: 30px;
 }
 
 .reasons {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,9 +40,14 @@
 .why-choose-object {
   max-width: 160px;
   max-height: 240px;
+  padding: 5px;
+  transition: 0.2s ease;
 }
 
-.why-choose-object h3 {
+.why-choose-object:hover {
+  background: #fff;
+}
+.why-choose-object > h3 {
   color: #ff8e14;
   text-transform: uppercase;
 }
