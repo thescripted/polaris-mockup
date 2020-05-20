@@ -23,12 +23,6 @@
   margin-left: 30px;
 }
 
-.right-of-image h1 {
-  font-size: 36px;
-  margin: 0;
-  padding: 0;
-}
-
 .reasons {
   display: flex;
   flex-direction: row;

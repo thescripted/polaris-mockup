@@ -1,0 +1,19 @@
+.service-header {
+  width: 900px;
+  margin: auto;
+  position: relative;
+}
+.service-header h2 {
+  display: inline;
+}
+
+.service-slides {
+  width: 900px;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slide-arrow {
+  cursor: pointer;
+}

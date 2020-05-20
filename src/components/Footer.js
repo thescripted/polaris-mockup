@@ -10,7 +10,7 @@ const Footer = () => {
         <img src={dentalObjects} alt="dental objects" />
       </div>
       <div className="right-of-image">
-        <h1>Why Choose Polaris Dental?</h1>
+        <h2>Why Choose Polaris Dental?</h2>
         <hr />
         <div className="reasons">
           <div className="why-choose-object">
