@@ -8,6 +8,12 @@
   display: inline;
 }
 
+.disable {
+  color: #aaa;
+  font-weight: normal !important;
+  cursor: default !important;
+}
+
 .service-header button {
   margin-top: 14px;
   float: right;
@@ -30,6 +36,15 @@
 
 .desktop-button {
   display: inline;
+}
+
+.slide-arrow {
+  width: 20px;
+  float: left;
+}
+
+.slide-arrow:hover {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {

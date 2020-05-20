@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Service.css";
 import ImageSlider from "./ImageSlider";
 import implants from "../images/dental-implants.jpeg";
@@ -7,14 +7,16 @@ import dental from "../images/dental-objects.jpeg";
 import modelOne from "../images/model-one.jpg";
 import modelTwo from "../images/model-two.jpeg";
 import Arrow from "./Arrow";
+import { useWindowDimensions } from "../hooks";
 
 const Service = () => {
-  const [state, setState] = useState({
-    activeIndex: 0,
-    translate: 0,
-    transition: 0.45,
-  });
-  const getWidth = () => window.innerWidth;
+  const [translate, setTranslate] = useState(0);
+  const [disableLeft, setDisableLeft] = useState(false);
+  const [disableRight, setDisableRight] = useState(false);
+  /* disableLeft and disableRight logically ideally should be kept in a custom hook*/
+
+  const { height, width } = useWindowDimensions();
+
   const slidesData = [
     {
       title: "Dental Implants",
@@ -56,33 +58,33 @@ const Service = () => {
     },
   ];
 
+  const sliderSize = Math.min(width, 900);
+  const viewableImages = Math.floor(sliderSize / 215);
+  const indexable = slidesData.length - viewableImages;
+  console.log(indexable);
   const nextSlide = () => {
-    if (state.activeIndex === slidesData.length - 1) {
-      return setState({ ...state, translate: 0, activeIndex: 0 });
-    }
-
-    setState({
-      ...state,
-      activeIndex: state.activeIndex + 1,
-      translate: (state.activeIndex + 1) * getWidth(),
-    });
+    /* All the values here are hard-coded for the sake of demonstration */
+    /* The translate value should be equal to the width of the images + padding */
+    setTranslate(translate - 215);
   };
-
   const prevSlide = () => {
-    if (state.activeIndex === 0) {
-      return setState({
-        ...state,
-        translate: (slidesData.length - 1) * getWidth(),
-        activeIndex: slidesData.length - 1,
-      });
+    setTranslate(translate + 215);
+  };
+
+  /* Upon re-render, effect will determine if slide should be disabled or not */
+  useEffect(() => {
+    if (translate <= -215 * indexable) {
+      setDisableRight(true);
+    } else {
+      setDisableRight(false);
     }
 
-    setState({
-      ...state,
-      activeIndex: state.activeIndex - 1,
-      translate: (state.activeIndex - 1) * getWidth(),
-    });
-  };
+    if (translate >= 0) {
+      setDisableLeft(true);
+    } else {
+      setDisableLeft(false);
+    }
+  }, [translate]);
 
   return (
     <div className="service-container">
@@ -100,22 +102,23 @@ const Service = () => {
             title={slide.title}
             photoURL={slide.photoURL}
             content={slide.content}
+            translateX={translate}
           />
         ))}
-
         <Arrow
-          className="arrow"
+          className={`slide-arrow ${disableLeft && "disable"}`}
           direction="left"
-          clickFunction={prevSlide}
+          clickFunction={!disableLeft ? prevSlide : () => {}}
           glyph="&#60;"
         />
 
         <Arrow
-          className="arrow"
+          className={`slide-arrow ${disableRight && "disable"}`}
           direction="right"
-          clickFunction={nextSlide}
+          clickFunction={!disableRight ? nextSlide : () => {}}
           glyph="&#62;"
         />
+
         <button className="button mobile-button">Full Services</button>
       </div>
     </div>

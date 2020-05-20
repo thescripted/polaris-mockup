@@ -1,8 +1,8 @@
 import React from "react";
-
-const Arrow = ({ direction, clickFunction, glyph }) => {
+import "./Arrow.css";
+const Arrow = ({ className, clickFunction, glyph }) => {
   return (
-    <div className={`slide-arrow ${direction}`} onClick={clickFunction}>
+    <div className={className} onClick={clickFunction}>
       {glyph}
     </div>
   );
