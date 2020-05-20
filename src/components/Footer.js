@@ -6,7 +6,9 @@ import "font-awesome/css/font-awesome.min.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <img src={dentalObjects} alt="dental objects" />
+      <div className="footer-image">
+        <img src={dentalObjects} alt="dental objects" />
+      </div>
       <div className="right-of-image">
         <h1>Why Choose Polaris Dental?</h1>
         <hr />

@@ -5,7 +5,7 @@ const Body = () => {
   return (
     <div className="body-container">
       <div className="copytext">
-        <p>Enhance your smile today!</p>
+        <h4>Enhance your smile today</h4>
         <h1>Lifetime Dental Health</h1>
         <p>
           Dr. Irfhan Khan and his team welcome you to our dental offices located
@@ -16,7 +16,13 @@ const Body = () => {
         </p>
         <button className="button">Schedule Appointment</button>
       </div>
-      <img src={familyImage} alt="Smiling Family"></img>
+      <div className="image-container">
+        <img
+          className="family-image"
+          src={familyImage}
+          alt="Smiling Family"
+        ></img>
+      </div>
     </div>
   );
 };
