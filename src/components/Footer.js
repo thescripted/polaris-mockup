@@ -1,7 +1,6 @@
 import React from "react";
 import dentalObjects from "../images/dental-objects.jpeg";
 import "./Footer.css";
-import "font-awesome/css/font-awesome.min.css";
 
 const Footer = () => {
   return (
@@ -14,7 +13,7 @@ const Footer = () => {
         <hr />
         <div className="reasons">
           <div className="why-choose-object">
-            <i className="far fa-address-card"></i>
+            <i class="fa fa-align-justify"></i>
             <h3>Flexible</h3>
             <p>
               We are open evenings and some Saturdays. No need to take time from
@@ -23,7 +22,7 @@ const Footer = () => {
           </div>
 
           <div className="why-choose-object">
-            <i className="far fa-address-card"></i>
+            <i class="fa fa-align-justify"></i>
             <h3>Patent Discount</h3>
             <p>
               No insurance? No problem. We offer generous discounts to help you
@@ -31,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="why-choose-object">
-            <i className="far fa-address-card"></i>
+            <i class="fa fa-align-justify"></i>
             <h3>Modern Technology</h3>
             <p>
               We use advanced technology including low-radiation digital x-rays,
@@ -39,7 +38,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="why-choose-object">
-            <i className="far fa-address-card"></i>
+            <i class="fa fa-align-justify"></i>
             <h3>Insurance Accepted</h3>
             <p>
               We are in network with many insurances and will always work with
@@ -48,7 +47,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="why-choose-object">
-            <i className="far fa-address-card"></i>
+            <i class="fa fa-align-justify"></i>
             <h3>Comfortable Amenities</h3>
             <p>
               Our comfortable offices offer a coffee station, a kids' TV area,
@@ -56,7 +55,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="why-choose-object">
-            <i className="far fa-address-card"></i>
+            <i class="fa fa-align-justify"></i>
             <h3>Commiment to Excellence</h3>
             <p>
               Dr. Khan and his team stay up-to-date with the latest dental
