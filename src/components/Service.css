@@ -67,7 +67,8 @@
 
 @media screen and (max-width: 768px) {
   .service-container {
-    width: 100%;
+    width: inherit;
+    padding-left: 20px;
   }
 
   .mobile-button button {

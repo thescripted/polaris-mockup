@@ -52,6 +52,19 @@
     margin-top: 20px;
   }
 
+  .copytext {
+    padding: 0px 0px 10px 20px;
+    font-size: 12px;
+  }
+
+  .copytext > h4 {
+    font-size: 12px;
+  }
+
+  .copytext > p {
+    padding: 0;
+  }
+
   .image-container {
     height: 400px;
     text-align: center;
