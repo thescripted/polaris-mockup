@@ -6,7 +6,7 @@
     #dfeefb 50%,
     #fff 50%
   ); /* A little hacky. Does not support < IE10 */
-  padding: 0 100px;
+  padding: 0 75px;
 }
 
 .header {
@@ -30,8 +30,12 @@
 }
 
 .header-contacts span {
-  padding-left: 25px;
+  padding-left: 35px;
   font-size: 10px;
+}
+
+.header-contacts button {
+  padding: 6px 18 px;
 }
 
 .navbar {
@@ -51,7 +55,18 @@
 
 .navbar li {
   display: inline-block;
-  padding-left: 35px;
+  padding-left: 40px;
+}
+
+.carat a:after {
+  font-size: 8px;
+  padding-left: 10px;
+  color: #ff8e14;
+  content: "\25BC";
+}
+
+.navbar li:first-child {
+  padding-right: 20px;
 }
 
 .navbar li > a {

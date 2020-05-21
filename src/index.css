@@ -1,7 +1,8 @@
 html {
   background-image: linear-gradient(to right, #fff8f0, #fff8f0);
-  background-position: 460px 270px;
+  background-position: 460px 320px;
   background-repeat: no-repeat;
+  color: #333;
 }
 
 body {
@@ -24,9 +25,10 @@ button {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 8px 20px;
   transition: 0.2s ease;
   font-size: 10px;
+  letter-spacing: -0.1em;
 }
 
 button:hover {
@@ -41,12 +43,19 @@ h2 {
   font-size: 36px;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.05em;
 }
 
 h3 {
   color: #ff8e14;
   text-transform: uppercase;
   font-size: 11px;
+  letter-spacing: -0.05em;
+}
+
+hr {
+  border-top: 2px solid #707070;
+  border-bottom: none;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,8 +1,12 @@
+.service-container {
+  width: 100%;
+}
+
 .service-header {
-  width: 900px;
+  width: 950px;
   margin: auto;
   position: relative;
-  margin-top: 180px;
+  margin-top: 150px;
 }
 .service-header > h2 {
   display: inline;
@@ -20,14 +24,24 @@
 }
 
 .service-slides {
-  width: 900px;
-  margin: auto;
   white-space: nowrap;
   overflow: hidden;
 }
 
+.service-slides,
+.arrow-container {
+  margin-left: calc((100% - 950px) / 2);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .slide-arrow {
+  margin-top: 10px;
   cursor: pointer;
+  font-size: 26px;
 }
 
 .mobile-button {
@@ -43,8 +57,12 @@
   float: left;
 }
 
-.slide-arrow:hover {
-  font-weight: bold;
+@media screen and (max-width: 950px) {
+  /* Hacky solution to have margin stop on one-end*/
+  .service-slides,
+  .arrow-container {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

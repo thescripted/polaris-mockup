@@ -4,9 +4,9 @@
   height: 250px;
   margin-right: 20px;
   overflow: hidden;
-  background-position: center;
   display: inline-block;
   font-size: 10px;
+  line-height: 1.6em;
 }
 
 .slide img {
@@ -20,11 +20,11 @@
 .slide a {
   text-decoration: none;
   font-weight: bold;
-  color: blue;
+  color: #2673b5;
 }
 
 .slide a:visited {
-  color: blue;
+  color: #2673b5;
 }
 
 .overlay h3 {

@@ -26,10 +26,10 @@ const Header = () => {
             <li>
               <a href="/">About POLARIS Dental</a>
             </li>
-            <li>
+            <li className="carat">
               <a href="/">Treatments</a>
             </li>
-            <li>
+            <li className="carat">
               <a href="/">For Patients</a>
             </li>
             <li>

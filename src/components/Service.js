@@ -105,20 +105,21 @@ const Service = () => {
             translateX={translate}
           />
         ))}
+      </div>
+      <div className="arrow-container">
         <Arrow
           className={`slide-arrow ${disableLeft && "disable"}`}
           direction="left"
           clickFunction={!disableLeft ? prevSlide : () => {}}
-          glyph="&#60;"
+          glyph="&#8249;"
         />
 
         <Arrow
           className={`slide-arrow ${disableRight && "disable"}`}
           direction="right"
           clickFunction={!disableRight ? nextSlide : () => {}}
-          glyph="&#62;"
+          glyph="&#8250;"
         />
-
         <button className="button mobile-button">Full Services</button>
       </div>
     </div>

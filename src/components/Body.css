@@ -1,12 +1,12 @@
 .body-container {
   display: flex;
-  width: 900px;
+  width: 950px;
   margin: auto;
   margin-top: 100px;
 }
 
 .copytext {
-  padding: 40px 10px 10px 10px;
+  padding: 70px 0px 10px 30px;
   flex: 0 0 35%;
   font-size: 11px;
 }
@@ -14,10 +14,10 @@
 .copytext h4 {
   text-transform: uppercase;
   color: #999;
-  margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   line-height: 2em;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .copytext h1 {
@@ -29,14 +29,15 @@
 }
 
 .copytext p {
-  line-height: 1.7em;
+  line-height: 1.8em;
   margin-bottom: 50px;
+  padding-right: 40px;
 }
 
 .image-container {
   flex: 0 1 65%;
   overflow: hidden;
-  height: 600px;
+  height: 580px;
 }
 
 .family-image {

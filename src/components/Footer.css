@@ -1,16 +1,16 @@
 .footer {
   display: flex;
-  width: 900px;
+  width: 950px;
   margin: 50px auto;
-  margin-top: 60px;
+  margin-top: 90px;
   font-size: 10px;
 }
 
 .footer-image-container {
   margin-top: 10px;
-  flex: 0 2 40%;
+  flex: 0 2 45%;
   overflow: hidden;
-  height: 500px;
+  height: 475px;
   position: relative;
   left: -50px;
 }
@@ -20,13 +20,12 @@
   height: 100%;
 }
 .right-of-image {
-  flex: 0 1 60%;
+  flex: 0 1 55%;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 .reasons {
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,9 +37,10 @@
 }
 
 .why-choose-object {
-  max-width: 160px;
-  max-height: 240px;
+  max-width: 150px;
+  min-height: 180px;
   padding: 5px;
+  margin: 5px;
   transition: 0.2s ease;
 }
 
