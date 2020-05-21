@@ -61,7 +61,7 @@ const Service = () => {
   const sliderSize = Math.min(width, 900);
   const viewableImages = Math.floor(sliderSize / 220);
   const indexable = slidesData.length - viewableImages;
-  console.log(indexable);
+
   const nextSlide = () => {
     /* All the values here are hard-coded for the sake of demonstration */
     /* The translate value should be equal to the width of the images + padding */

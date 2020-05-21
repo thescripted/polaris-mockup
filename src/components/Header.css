@@ -38,6 +38,35 @@
   padding: 6px 18 px;
 }
 
+.treatment,
+.patient {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content-treatments,
+.dropdown-content-patient {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown-content-treatments a,
+.dropdown-content-patient a {
+  display: block;
+}
+
+.treatment:hover .dropdown-content-treatments {
+  display: block;
+}
+
+.patient:hover .dropdown-content-patient {
+  display: block;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -58,7 +87,7 @@
   padding-left: 40px;
 }
 
-.carat a:after {
+.carat span:after {
   font-size: 8px;
   padding-left: 10px;
   color: #ff8e14;
@@ -75,13 +104,29 @@
   text-align: center;
 }
 
-.navbar li > a:hover {
+.navbar li > a:hover,
+.treatment:hover,
+.patient:hover {
   color: #aaa;
 }
+
 .navbar-menu,
 .header-menu,
-.booking {
+.booking,
+.mobile-nav,
+.mobile-call {
   display: none;
+  cursor: pointer;
+}
+.mobile-nav,
+.mobile-call {
+  position: absolute;
+  margin-left: -160px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,5 +152,15 @@
     display: inline-block;
     padding-left: 25px;
     font-weight: bold;
+  }
+
+  .navbar-menu:hover .mobile-nav {
+    font-weight: normal;
+    display: block;
+  }
+
+  .header-menu:hover .mobile-call {
+    font-weight: normal;
+    display: block;
   }
 }
