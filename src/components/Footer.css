@@ -60,6 +60,10 @@
 
   .right-of-image {
     text-align: left;
+  }
+
+  .right-of-image h2,
+  .right-of-image hr {
     padding-left: 20px;
   }
 
